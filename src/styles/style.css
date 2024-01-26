@@ -137,14 +137,15 @@ main .catalog {
 
 main .catalog .card {
   display: flex;
-  width: auto;
+  width: 25%;
+  height: auto;
   flex-direction: column;
   background-color: #f8fae5;
   border-radius: 8px 8px 0 0;
 }
 
 main .catalog .card img {
-  width: 300px;
+  width: 100%;
   height: 300px;
   border-radius: 8px 8px 0 0;
 }
@@ -209,9 +210,31 @@ footer .contact .box-contact .contact2 a:hover {
     max-width: 150px;
     max-height: 150px;
   }
+
+  main .catalog .card {
+    width: 40%;
+    height: auto;
+  }
+
+  main .catalog .card img {
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  main .catalog .card {
+    flex-direction: row;
+    border-radius: 0 8px 8px 0;
+    height: auto;
+    width: 90%;
+  }
+
+  main .catalog .card img {
+    border-radius: 0 0 0 0;
+    width: 60%;
+    height: 200px;
+  }
+  
   footer .contact {
     flex-direction: column;
     gap: 8px;
